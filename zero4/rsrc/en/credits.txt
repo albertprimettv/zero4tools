@@ -1,0 +1,533 @@
+set basepattern=0x0
+set patternoffset=0
+
+set xorigin=0
+set yorigin=0
+set xoffset=-64
+set yoffset=0
+
+#================================
+# 
+#================================
+
+openGrp "out/rsrc/credits_0.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_0.bin"
+#outputPreviewGrp "test_preview.png"
+
+openGrp "out/rsrc/credits_1.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_1.bin"
+#outputPreviewGrp "test_preview.png"
+
+openGrp "out/rsrc/credits_2.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_2.bin"
+
+# openGrp "out/rsrc/credits_3.png"
+# add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+# outputSprites "out/grp/credits_sprites_3.bin"
+
+openGrp "out/rsrc/credits_4.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_4.bin"
+
+openGrp "out/rsrc/credits_5.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_5.bin"
+
+openGrp "out/rsrc/credits_6.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_6.bin"
+
+openGrp "out/rsrc/credits_7.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_7.bin"
+
+openGrp "out/rsrc/credits_8.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_8.bin"
+
+openGrp "out/rsrc/credits_9.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_9.bin"
+
+openGrp "out/rsrc/credits_10.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_10.bin"
+
+openGrp "out/rsrc/credits_11.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_11.bin"
+
+openGrp "out/rsrc/credits_12.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_12.bin"
+
+openGrp "out/rsrc/credits_13.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_13.bin"
+
+openGrp "out/rsrc/credits_14.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_14.bin"
+
+openGrp "out/rsrc/credits_15.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_15.bin"
+
+openGrp "out/rsrc/credits_16.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_16.bin"
+
+openGrp "out/rsrc/credits_17.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_17.bin"
+
+openGrp "out/rsrc/credits_18.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_18.bin"
+
+openGrp "out/rsrc/credits_19.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_19.bin"
+
+openGrp "out/rsrc/credits_20.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_20.bin"
+
+openGrp "out/rsrc/credits_21.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_21.bin"
+
+openGrp "out/rsrc/credits_22.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_22.bin"
+
+openGrp "out/rsrc/credits_23.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_23.bin"
+
+openGrp "out/rsrc/credits_24.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_24.bin"
+
+openGrp "out/rsrc/credits_25.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_25.bin"
+
+openGrp "out/rsrc/credits_26.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_26.bin"
+
+openGrp "out/rsrc/credits_27.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_27.bin"
+
+openGrp "out/rsrc/credits_28.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_28.bin"
+
+openGrp "out/rsrc/credits_29.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_29.bin"
+
+openGrp "out/rsrc/credits_30.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_30.bin"
+
+# openGrp "out/rsrc/credits_31.png"
+# add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+# add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+# outputSprites "out/grp/credits_sprites_31.bin"
+
+openGrp "out/rsrc/credits_32.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_32.bin"
+
+openGrp "out/rsrc/credits_33.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_33.bin"
+
+openGrp "out/rsrc/credits_34.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_34.bin"
+
+openGrp "out/rsrc/credits_35.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_35.bin"
+
+set xoffset=-88
+
+openGrp "out/rsrc/credits_36.png"
+add x=0x00  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x10  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x20  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x30  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x40  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x50  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x60  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x70  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x80  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0x90  y=0x00 w=16 h=16 pri=1 pal=1
+add x=0xA0  y=0x00 w=16 h=16 pri=1 pal=1
+outputSprites "out/grp/credits_sprites_36.bin"

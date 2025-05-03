@@ -1,0 +1,217 @@
+[Properties]
+# we have to declare enough slots to accommodate everything listed
+# in the table file, which unfortunately must include the original-game
+# codepoints (0x80+) in order to allow our tools to accept them
+numChars=256
+charsPerRow=16
+gridW=16
+gridH=16
+noKerning=1
+fixedWidth=8
+autoKerningMode=square
+
+#==============================
+# kerning settings
+#==============================
+
+[AutoKerningTuneSym_T_L]
+1=J/a/c/d/e/g/j/m/n/o/p/q/r/s/u/v/w/x/y/z
+[AutoKerningTuneSym_T_R]
+1=L/a/b/c/e/g/h/k/m/n/o/p/q/r/s/u/v/w/x/y/z
+
+[AutoKerningTuneSym_Y_L]
+1=J
+
+[AutoKerningTuneSym_f_R]
+1=E/F/I/L
+
+[AutoKerningTuneSym_j_R]
+1=p/r/w
+2=v
+
+[AutoKerningTuneSym_._R]
+1=T/Y/f/r
+2=F/P
+
+[AutoKerningTuneSym_,_R]
+1=F/P/T/V/Y/p/v
+
+[AutoKerningTuneSym_'_L]
+#-1=d/m/n/r/s/t/u
+-1=d/m/n/r/s/t/u/v
+
+[AutoKerningTuneSym_`_L]
+-1=d/m/n/r/s/t/u/v
+
+[AutoKerningTuneSym_{_L]
+1=a/c/d/e/g/j/o/q/s
+
+[AutoKerningTuneSym_}_R]
+1=b/c/e/h/m/n/o/p
+2=L
+
+#==============================
+# character settings
+#==============================
+
+# space
+
+[symchar_ ]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=3
+
+# digits
+
+[symchar_0]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_1]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_2]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_3]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_4]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_5]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_6]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_7]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_8]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+[symchar_9]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=6
+
+#[symchar_{]
+#noKerningIfFirst=1
+#noKerningIfSecond=1
+
+#[symchar_}]
+#noKerningIfFirst=1
+#noKerningIfSecond=1
+
+#[symchar_`]
+#noKerningIfFirst=1
+#noKerningIfSecond=1
+
+# "."
+[symchar_.]
+noKerningIfFirst=1
+#extraKerningIfRight=1
+#noKerningIfSecond=1
+#advanceWidth=3
+
+# ','
+[symchar_,]
+noKerningIfFirst=1
+#noKerningIfSecond=1
+#advanceWidth=4
+
+# '!'
+[symchar_!]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# '?'
+[symchar_?]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# "'"
+[symchar_']
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-1
+#extraKerningIfLeft=-1
+
+# ';'
+[symchar_;]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# ':'
+[symchar_:]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# em dash
+[symchar_—]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# '...'
+[symchar_...]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+#advanceWidth=12
+
+[symchar_…]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#advanceWidth=12
+
+# hyphen
+[symchar_-]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# fixed spaces
+
+[symchar_[1px]]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=1
+
+[symchar_[4px]]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=4
+
+[symchar_[8px]]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+# nbsp
+
+[symchar_[nbsp]]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=3
+
+[symchar_[e_short]]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=4

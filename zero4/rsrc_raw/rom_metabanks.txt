@@ -1,0 +1,39 @@
+
+//srcfile "zero4.pce"
+//dstfile "zero4_build.pce"
+
+
+
+// HACK: these two metabanks must be in this order!
+// the relationship of their ID numbers is used for data placement and
+// generation of the correct jump opcode for each replaced string.
+importbank "maintext" "zero4.pce" "zero4_build.pce" 0x10000 0x8000 0x4000
+addemptybank "newtext" "zero4_build.pce" 0x80000 0x8000 0x4000
+
+
+
+importbank "bank00" "zero4.pce" "zero4_build.pce" 0x00000 0x2000 0xE000
+importbank "bank01" "zero4.pce" "zero4_build.pce" 0x02000 0x2000 0xC000
+importbank "gamescript" "zero4.pce" "zero4_build.pce" 0x20000 0x8000 0x4000
+importbank "race" "zero4.pce" "zero4_build.pce" 0x28000 0x2000 0x4000
+importbank "sprites" "zero4.pce" "zero4_build.pce" 0x4000 0x4000 0x4000
+
+// generic free areas to put new resources in
+addemptybank "freebank_0" "zero4_build.pce" 0x88000 0x2000 0xA000
+addemptybank "freebank_1" "zero4_build.pce" 0x8A000 0x2000 0xA000
+addemptybank "freebank_2" "zero4_build.pce" 0x8C000 0x2000 0xA000
+addemptybank "freebank_3" "zero4_build.pce" 0x8E000 0x2000 0xA000
+
+// generic free areas for mpr6 code + resources
+addemptybank "codebank_0" "zero4_build.pce" 0x90000 0x2000 0xC000
+addemptybank "codebank_1" "zero4_build.pce" 0x92000 0x2000 0xC000
+addemptybank "codebank_2" "zero4_build.pce" 0x94000 0x2000 0xC000
+addemptybank "codebank_3" "zero4_build.pce" 0x96000 0x2000 0xC000
+
+// generic free areas for new graphics
+addemptybank "grpbank_0" "zero4_build.pce" 0x98000 0x4000 0x4000
+addemptybank "grpbank_1" "zero4_build.pce" 0x9C000 0x4000 0x4000
+addemptybank "grpbank_2" "zero4_build.pce" 0xA0000 0x4000 0x4000
+addemptybank "grpbank_3" "zero4_build.pce" 0xA4000 0x4000 0x4000
+
+outputinclude "asm/gen/metabanks.inc"

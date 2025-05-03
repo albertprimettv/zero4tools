@@ -1,0 +1,26 @@
+#******************************************************************************
+# race-circuit tilemap generator
+#******************************************************************************
+
+[Properties]
+palette=out/rsrc_raw/pal/race_circuit.pal
+#freepalettes=
+dest=out/grp/race_circuit.bin
+#paldest=out/rsrc_raw/pal/carderror.pal
+loadAddr=0x0
+#minTiles=0x185
+maxTiles=0x10
+blacklist=0x0-0x7D2
+background=out/rsrc_raw/grp/race_circuit.bin
+
+#******************************************************************************
+# Main layout
+#******************************************************************************
+
+[Tilemap00]
+source=out/rsrc/racehud-circuit.png
+dest=out/maps/racehud-circuit.bin
+palette=0xC
+transparency=0
+format=half
+

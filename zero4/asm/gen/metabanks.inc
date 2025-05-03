@@ -1,0 +1,59 @@
+.define metabank_maintext $0
+  .define metabank_maintext_loadAddr $4000
+  .define metabank_maintext_size $8000
+.define metabank_newtext $1
+  .define metabank_newtext_loadAddr $4000
+  .define metabank_newtext_size $8000
+.define metabank_bank00 $2
+  .define metabank_bank00_loadAddr $E000
+  .define metabank_bank00_size $2000
+.define metabank_bank01 $3
+  .define metabank_bank01_loadAddr $C000
+  .define metabank_bank01_size $2000
+.define metabank_gamescript $4
+  .define metabank_gamescript_loadAddr $4000
+  .define metabank_gamescript_size $8000
+.define metabank_race $5
+  .define metabank_race_loadAddr $4000
+  .define metabank_race_size $2000
+.define metabank_sprites $6
+  .define metabank_sprites_loadAddr $4000
+  .define metabank_sprites_size $4000
+.define metabank_freebank_0 $7
+  .define metabank_freebank_0_loadAddr $A000
+  .define metabank_freebank_0_size $2000
+.define metabank_freebank_1 $8
+  .define metabank_freebank_1_loadAddr $A000
+  .define metabank_freebank_1_size $2000
+.define metabank_freebank_2 $9
+  .define metabank_freebank_2_loadAddr $A000
+  .define metabank_freebank_2_size $2000
+.define metabank_freebank_3 $A
+  .define metabank_freebank_3_loadAddr $A000
+  .define metabank_freebank_3_size $2000
+.define metabank_codebank_0 $B
+  .define metabank_codebank_0_loadAddr $C000
+  .define metabank_codebank_0_size $2000
+.define metabank_codebank_1 $C
+  .define metabank_codebank_1_loadAddr $C000
+  .define metabank_codebank_1_size $2000
+.define metabank_codebank_2 $D
+  .define metabank_codebank_2_loadAddr $C000
+  .define metabank_codebank_2_size $2000
+.define metabank_codebank_3 $E
+  .define metabank_codebank_3_loadAddr $C000
+  .define metabank_codebank_3_size $2000
+.define metabank_grpbank_0 $F
+  .define metabank_grpbank_0_loadAddr $4000
+  .define metabank_grpbank_0_size $4000
+.define metabank_grpbank_1 $10
+  .define metabank_grpbank_1_loadAddr $4000
+  .define metabank_grpbank_1_size $4000
+.define metabank_grpbank_2 $11
+  .define metabank_grpbank_2_loadAddr $4000
+  .define metabank_grpbank_2_size $4000
+.define metabank_grpbank_3 $12
+  .define metabank_grpbank_3_loadAddr $4000
+  .define metabank_grpbank_3_size $4000
+
+.define numMetabanks $13

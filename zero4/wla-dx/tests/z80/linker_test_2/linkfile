@@ -1,0 +1,6 @@
+[objects]
+main.o
+setup.o
+
+[libraries]
+bank 0 slot 0 lib.o

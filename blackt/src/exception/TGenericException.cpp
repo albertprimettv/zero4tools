@@ -1,0 +1,26 @@
+#include "exception/TGenericException.h"
+
+namespace BlackT {
+
+
+TGenericException::TGenericException(const char* nameOfSourceFile__,
+                                   int lineNum__,
+                                   const std::string& source__,
+                                   const std::string& problem__)
+  : TException(nameOfSourceFile__,
+                   lineNum__,
+                   source__),
+    problem_(problem__),
+    srcProblem(source__ + ": " + problem__) { };
+
+const char* TGenericException::what() const throw() {
+//  return (source_ + ": " + problem_).c_str();
+  return srcProblem.c_str();
+}
+
+std::string TGenericException::problem() const {
+  return problem_;
+}
+
+
+}; 

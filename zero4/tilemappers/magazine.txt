@@ -1,0 +1,77 @@
+#******************************************************************************
+# magazine tilemap generator
+#******************************************************************************
+
+[Properties]
+palette=out/rsrc_raw/pal/magazine.pal
+#freepalettes=
+dest=out/grp/magazine.bin
+#paldest=out/rsrc_raw/pal/carderror.pal
+#loadAddr=0x500
+# these tilemaps are in half-width format, so the upper byte is manually specified.
+# since i already wrote the blacklist with regard to the target graphic "page",
+# just generate starting at 0x0000.
+loadAddr=0x000
+#minTiles=0x185
+maxTiles=0x100
+blacklist=0x00-0x11 0x17-0x1A 0x1F-0x3F 0x4E-0x4F 0x7E-0x86 0x89-0x91 0x93-0x9B 0x9E-0xA5 0xA7-0xB2 0xB5-0xC2 0xC5-0xCB
+background=out/rsrc_raw/grp/magazine.bin
+
+#******************************************************************************
+# Main layout
+#******************************************************************************
+
+[Tilemap00]
+source=out/rsrc/magazine-bg.png
+dest=out/maps/magazine-bg.bin
+transparency=0
+format=half
+
+[Tilemap01]
+source=out/rsrc/magazine-headline_0.png
+dest=out/maps/magazine-headline_0.bin
+transparency=0
+format=half
+
+[Tilemap02]
+source=out/rsrc/magazine-headline_1.png
+dest=out/maps/magazine-headline_1.bin
+transparency=0
+format=half
+
+[Tilemap03]
+source=out/rsrc/magazine-headline_2.png
+dest=out/maps/magazine-headline_2.bin
+transparency=0
+format=half
+
+[Tilemap04]
+source=out/rsrc/magazine-headline_3.png
+dest=out/maps/magazine-headline_3.bin
+transparency=0
+format=half
+
+[Tilemap05]
+source=out/rsrc/magazine-headline_4.png
+dest=out/maps/magazine-headline_4.bin
+transparency=0
+format=half
+
+[Tilemap06]
+source=out/rsrc/magazine-headline_5.png
+dest=out/maps/magazine-headline_5.bin
+transparency=0
+format=half
+
+[Tilemap07]
+source=out/rsrc/magazine-headline_6.png
+dest=out/maps/magazine-headline_6.bin
+transparency=0
+format=half
+
+[Tilemap08]
+source=out/rsrc/phonebook-bg.png
+dest=out/maps/phonebook-bg.bin
+transparency=0
+format=half
+

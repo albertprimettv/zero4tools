@@ -1,0 +1,141 @@
+== memory ==
+$2046: handler for "main logic"? called in vblank handler;
+       may lead to e.g. script handling.
+       this is changed during races
+$2048: ? like above, but called unconditionally in vblank handler
+$204A: line interrupt handler?
+$20AB: ? handler
+$20AD: ? handler.
+       if this returns carry set, script evaluation, etc. in $2046 handler is inhibited.
+$20BC: count of license renewal quiz questions answered correctly
+       (presumably also used for other things)
+$221F: set to 0xFF after race if result was a draw?
+$222D: textscript state array
+  - slots seem to be used more or less consistently as follows:
+    +0 ($222D): main status window (age/rank/day)
+    +1 ($222E): top-level menus (main menu, price when buying car, etc.)
+    +2 ($222F): main dialogue window
+    +3 ($2230): various (job menu, data view menu, etc.)
+    +4 ($2231): various (tools list, yes/no when signing contract, game center game selection, etc.)
+    +5 ($2232): 
+    +6 ($2233): 
+    +7 ($2234): "special" stuff (shop phone book, nerima auto contract, etc.)
+$251F: during races, bit 7 set == player's car has automatic transmission
+$2588: gamescrState_array
+$25A4: gamescrLo_array
+$25A8: gamescrHi_array
+$2614: number of in-game weeks that have passed.
+       this is used to compute the month/day display.
+       - special events appear to occur on (cf. gamescript code at 0x586 in module):
+        - 0x1A2: 3 years to end of game warning message
+        - 0x9A: license renewal 1
+        - 0x136: license renewal 2
+        - 0x1D3: license renewal 3
+        - 0x23E: game over event
+$26A4: temp storage for e.g. raw-encoding version of generated password?
+       - and raw-encoding version of name on naming screen
+$2724: temp storage for e.g. printable version of generated password
+$27A4: generated textscript data used to set up writes for next character to screen
+       - 04 XX XX = set position
+       - followed by whatever display commands
+
+== unheadered vs. "v1.5" version differences ==
+bank 0x00 contains an additional header at the beginning in v1.5
+  - ...oh, if i had looked at this for 5 seconds, i'd have realized that it contains a sjis comment explaining what i needed to know, and i could have skipped all the analysis below this:
+    1991/3/19 ﾊﾚ   VS ﾓｰﾄﾞﾉ ｵｰﾄﾏ ﾉ ﾌﾂｺﾞｳ ｦﾅｵｼﾀﾈﾂｶﾞﾃﾞﾃ ﾀｲﾍﾝﾀﾞｯﾀ  ｿﾚｦｵｼﾃ ﾔｯﾀﾎﾞｸﾊ ﾅﾝﾃ ｴﾗｲﾝﾀﾞ!! ﾋﾗｻﾜ ﾐﾁﾔ
+    "1991/3/19   Sunny   I fixed a problem with the VS Mode automatic [transmission]. I came down with a fever, and it was terrible. For getting it done despite that, I'm awesome!! Michiya Hirasawa"
+    so yeah, sounds like this is the version we want.
+bank 0x10 contains some differences.
+  - pointers to 0xF8D8 become 0xF973 in v1.5.
+    this corresponds to some sort of stack manipulation routine in kernel bank 0x00, which is positioned differently between versions.
+  - 0xFD24 -> 0xFD9A
+  - 0xE271 -> 0xE2E7
+  - 0xFCFF -> 0xFD75
+  - starting at 0x20533, there are various changes by a small number of bytes.
+    appear to correspond to pointers into bank 0x11?
+    was some data replaced?
+    - yes: 4 bytes were added at 0x218DF (mem map 0x58DF) in v1.5.
+  - disregarding the disalignment caused by the additional 4 bytes, pointer changes continue
+    for the next several banks
+  - 4 bytes were added at 0x276E1 (0x276E5 in v1.5)
+  - 5 bytes were added at 0x27725 (0x2772E in v1.5)
+  - a bunch of bytes were added at 0x277B0(?)/0x277BD.
+    remove 0x2D to realign.
+    total shift = 0x3A
+  - 0x3D bytes were added at 0x279B3.
+    total shift = 0x77
+  - for the small amount of data remaining in the bank afte this, things seem to
+    get too chaotic to compare effectively
+    - ??? some data was added at 0x279BF (0x27A36).
+      remove 0x2B to realign.
+      total shift = 0xA2
+bank 0x14 (drag race code module?) has different bank-end fill, otherwise identical
+0x2FA64-0x2FFFF has different bank-end fill, otherwise identical
+0x5F574-0x5FFFF has different bank-end fill, otherwise identical
+0x6F700-0x6FFFF has different bank-end fill, otherwise identical
+0x7CE6A-0x7FFFF has different bank-end fill, otherwise identical
+
+== things that will have to happen ==
+
+- game can theoretically print 8 windows of text simultaneously.
+  i don't know if it ever actually does this, but it means we'll have to have a separate
+  composition buffer for each window (8x8 1bpp = 8 bytes, *8 windows = 64 bytes).
+  also, if kerning is used and we need the ability to rewrite the previous pattern
+  after it's been sent, we'll need to also keep the buffer for the previous
+  pattern (presumably by alternating between two buffers each time a pattern
+  is completed).
+- will need to have the ability to read text data from an alternate source --
+  the existing 4 banks will not be enough.
+  this will probably be most easily implemented by adding an additional flag byte
+  per window and loading an alternate set of 4 banks if the flag is set.
+  of course, this will also have to be applied immediately for any jump operations
+  into/out of the new area.
+  - or will it? only one operation is run per textscript iteration.
+    check at start of each iteration if current source banks match flag state,
+    and swap if not.
+  - however, this is further complicated by the existence of textscript call/return
+    functionality -- if we do a call outside of the current area, the target bank
+    set will have to be pushed to a stack, as with the return address.
+
+
+
+
+to be properly visible in monochrome with even palettes:
+  - all fg pixels must be 0x8, 0x9, 0xA, or 0xB --
+    i.e. bit 3 set and bit 2 unset
+  - all bg pixels must be 0x4, 0x5, 0x6, or 0x7 --
+    i.e. bit 3 unset and bit 2 set
+
+to be properly visible in monochrome with odd palettes:
+  - all fg pixels must be 0x2, 0x6, 0xA, or 0xE --
+    i.e. bit 1 set and bit 0 unset
+  - all bg pixels must be 0x1, 0x5, 0x9, or 0xD --
+    i.e. bit 1 unset and bit 0 set
+
+23ed
+mouse encounter if bit 6 of $2577 clear and bit 1 set at check time.
+bit 1 is set by script at $6082?
+setup occurs around $6265...
+
+holiday auto graphic spec:
+  - list begins at $CA55
+    - actual entry for magazine stuff at $CA5A
+holiday auto bg tilemap spec = C668 (half, hi byte 0x35)
+phone book bg tilemap spec = CB80 (half, hi byte 0xB5)
+holiday auto headline tilemap specs:
+  - C676 = キング、四天王安たい！
+  - C67D = 速すぎる、キング！
+  - C684 = キングまたしても圧勝
+  - C68B = またしても、キング！
+  - C692 = キング、あやうし！！
+  - C699 = 四天王、あやうし！！
+  - C6A0 = 新入現る！！
+
+- imamura visits are triggered (by gamescript call at 0x4575, to 0x9DFC) if:
+  - $261A is 0x6 or 0xC (month is june or december)
+  - $261B is greater than 0x7 and less than or equal to 0xE (day is 8 through 14)?
+actual item received is determined by $20CC?
+displayed item name is determined by $2607?
+
+2518 = currently selected track in sound test
+
