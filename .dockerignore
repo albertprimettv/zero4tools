@@ -1,0 +1,4 @@
+.dockerignore
+Dockerfile
+**/.git
+**/zero4_build.pce

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 echo "*******************************************************************************"
 echo "Updating build information..."
@@ -73,9 +74,9 @@ echo "**************************************************************************
 echo "Building project tools..."
 echo "********************************************************************************"
 
-make blackt
-make libpce
-make
+make -j `nproc` blackt
+make -j `nproc` libpce
+make -j `nproc`
 
 if [ ! -f $WLADX ]; then
   
@@ -85,8 +86,8 @@ if [ ! -f $WLADX ]; then
   
   cd wla-dx
 #    cmake -G "Unix Makefiles" .
-    mkdir build && cd build && cmake ..
-    make
+    mkdir -p build && cd build && cmake ..
+    make -j `nproc`
   cd $BASE_PWD
   
 fi
